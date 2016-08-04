@@ -19,7 +19,7 @@ os: linux
 #   may cause associated deployments to fail.
 files:
   - source: source/
-    destination: /data/www/client/jous/prod/
+    destination: /data/www/client/chantelle/prod/
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
 #   you can specify a "permissions" 
 #   section here that describes special permissions to apply to the files 
@@ -41,6 +41,11 @@ files:
 #       range:
 #     type:
 #       -
+permissions:
+  - object: /data/www/client/chantelle/prod
+    owner: www-client
+    group: www-client
+    mode: 644
 
 # If you are not running any commands on the Amazon EC2 instance, then remove 
 #   the "hooks" section altogether. A blank or incomplete "hooks" section
