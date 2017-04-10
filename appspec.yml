@@ -19,7 +19,7 @@ os: linux
 #   may cause associated deployments to fail.
 files:
   - source: source/
-    destination: /data/www/client/chantelle/prod/
+    destination: /data/www/client/codedeploy/
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
 #   you can specify a "permissions" 
 #   section here that describes special permissions to apply to the files 
@@ -42,7 +42,7 @@ files:
 #     type:
 #       -
 permissions:
-  - object: /data/www/client/chantelle/prod
+  - object: /data/www/client/codedeploy/
     owner: www-client
     group: www-client
     mode: 644
